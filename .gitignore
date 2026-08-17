@@ -12,3 +12,7 @@ venv/
 # Lean
 .lake/
 *.olean
+
+# Julia search
+julia/Manifest.toml
+artifacts/

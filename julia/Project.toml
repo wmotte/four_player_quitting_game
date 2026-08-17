@@ -1,0 +1,21 @@
+name = "QuittingGames"
+uuid = "9c1d5f3a-2b7e-4e8a-9f0d-3a6c8b1e5d42"
+version = "0.1.0"
+authors = ["Wim Otte <w.m.otte@umcutrecht.nl>"]
+
+[deps]
+CDDLib = "3391f64e-dcde-5f30-b752-e11513730f60"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Polyhedra = "67491407-f73d-577b-9b50-8179a7c68029"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[compat]
+CDDLib = "0.10.3"
+Polyhedra = "0.8.1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

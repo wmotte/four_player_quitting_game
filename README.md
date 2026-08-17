@@ -54,8 +54,8 @@ independently in Python and calling none of the Julia code, checks those
 certificates again. The same certificates are also replayed as Lean 4
 theorems against the Lean kernel.
 
-This repository ships the certificates, the Python checker, and the Lean
-corpus for one game. It does not ship the Julia search.
+This repository ships the certificates, the Python checker, the Lean
+corpus for one game, and the Julia search that proposed it.
 
 ## The game
 
@@ -152,12 +152,27 @@ lake build Formal.Certificates.Seed202_r78_gen011.PeriodK2.Batch01
 
 Toolchain: Lean 4.33.0-rc1, Mathlib `v4.33.0-rc1`. See [lean/README.md](lean/README.md).
 
+## How to run the search
+
+Julia 1.10 or later. `CDDLib` is needed for the Flesch-path gate.
+
+```
+julia --project=julia -e 'using Pkg; Pkg.instantiate(); Pkg.test()'
+julia --project=julia julia/scripts/run_phase1.jl --seed 1 \
+      --gens 50 --pop 28 --rmats 10 --out artifacts/candidates/run1
+julia --project=julia julia/scripts/sieve_candidates.jl artifacts/candidates/run1
+```
+
+The search writes a shortlist of rational games. It does not certify them.
+See [julia/README.md](julia/README.md).
+
 ## Layout
 
 ```
 certificates/seed202_r78_gen011/   162 JSON certificates and the manifest
 checker/                           independent Python checker
 lean/                              Lean 4 replay of the same certificates
+julia/                             the search that proposed the game
 docs/                              the problem, the status, the file format
 LITERATURE.md                      papers
 ```

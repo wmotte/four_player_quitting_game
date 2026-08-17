@@ -54,6 +54,6 @@ classification of all mixed paths. What can be done by machine, in exact
 rationals, is: isolate every real root of a polynomial system and discard it
 by a best-response inequality; certify emptiness of a subdivision by a sign
 on every leaf; expand a Nullstellensatz identity; replay the same identity
-in Lean. That is the route taken here, in Julia, because that is the
-toolkit at hand. Heuristic search (random screening, then differential
+in Lean. That is the route taken here, in Julia (https://julialang.org/). 
+Heuristic search (random screening, then differential
 evolution) only proposes a game. The certificates are the argument.
