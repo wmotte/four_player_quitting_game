@@ -1,0 +1,26 @@
+{
+  "format_version": 1,
+  "id": "v1/simultaneous_quit/seed202_r78_gen011/B24",
+  "game": "seed202_r78_gen011",
+  "case": "B24",
+  "claim": "coalition {2, 4}: no strictly positive z solves M z = 0, where M is the principal submatrix of the unilateral matrix on players 2, 4 -- its (i,j) entry is the shifted payoff to the i-th of them when the j-th quits alone, so the system says every member of the coalition is indifferent while all of them quit at a positive rate. The conditions below are the linear forms (M^T y)_i with the payoff entries as their coefficients, and the point is the y that makes them non-negative and not all zero: any z > 0 with M z = 0 would then give 0 = <M z, y> = <z, M^T y> > 0. This is the hypothesis of (L8) for this coalition (docs/G3_MIXED_APS.md 12.2).",
+  "type": "witness",
+  "metrics": {"n_vars": 2, "n_conditions": 3, "max_coeff_bits": 3},
+  "data": {
+    "point": {"y1": "0", "y2": "1"},
+    "conditions": [
+      {"name": "nonneg1",
+       "vars": ["y1", "y2"],
+       "poly": [["1", [0, 1]]],
+       "sense": ">=0"},
+      {"name": "nonneg2",
+       "vars": ["y1", "y2"],
+       "poly": [["6", [1, 0]]],
+       "sense": ">=0"},
+      {"name": "nonzero",
+       "vars": ["y1", "y2"],
+       "poly": [["1", [0, 1]], ["6", [1, 0]]],
+       "sense": ">0"}
+    ]
+  }
+}

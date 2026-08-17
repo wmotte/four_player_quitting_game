@@ -1,0 +1,61 @@
+{
+  "format_version": 1,
+  "id": "fixture/bnb/quadratic_leaf_not_positive",
+  "game": "fixture",
+  "claim": "FALSE ON PURPOSE. Claims no point of [0,1]^2 has x1^2 - x1 + 1/8 <= 0, on a single leaf. The condition is genuinely negative on part of that box (its minimum is 1/8 - 1/4 = -1/8 at x1 = 1/2), so no sound enclosure may sign it positive there. This is the negative test for the Bernstein branch of range_on_box: the enclosure is only ever used to ACCEPT a leaf, so a bug in it buys false certificates, and unlike the multilinear vertex rule it is not exact.",
+  "type": "bnb_trace",
+  "domain": {
+    "note": "test fixture"
+  },
+  "data": {
+    "vars": [
+      "x1",
+      "x2"
+    ],
+    "conditions": [
+      [
+        [
+          "1",
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          "-1",
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          "1/8",
+          [
+            0,
+            0
+          ]
+        ]
+      ]
+    ],
+    "condition_senses": [
+      "<=0"
+    ],
+    "root_box": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "splits": {
+      "violated": 0,
+      "sense": ">0"
+    },
+    "condition_names": [
+      "quadratic_dips_below_zero"
+    ]
+  }
+}

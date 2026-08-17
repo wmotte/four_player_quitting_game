@@ -1,0 +1,308 @@
+{
+  "format_version": 1,
+  "id": "v1/v0/seed202_r78_gen011/minmax_lower_2",
+  "game": "seed202_r78_gen011",
+  "case": "V0 minmax lower bound, player 2",
+  "claim": "with L = 490933/3145728, no stationary punishment z of player 2 satisfies both a(z) <= L and b(z) <= L*q(z), so the smallest level w_2 admitting one exceeds L; and v^2 >= w_2 unconditionally (docs/V0_MINIMAX.md 2.1). Coordinate x2 is pinned to 0: the punishment is played by the other players.",
+  "type": "bnb_trace",
+  "domain": {
+    "box": {"x1": ["0", "1"], "x2": ["0", "0"], "x3": ["0", "1"], "x4": ["0", "1"]}
+  },
+  "metrics": {"n_vars": 4, "n_conditions": 2, "n_leaves": 72, "tree_depth": 44, "max_coeff_bits": 29},
+  "data": {
+    "vars": ["x1", "x2", "x3", "x4"],
+    "condition_names": ["quit_at_most_L", "wait_at_most_L"],
+    "condition_senses": ["<=0", "<=0"],
+    "conditions": [
+      [["2654795/3145728", [0, 0, 0, 0]], ["-17/29", [0, 0, 0, 1]], ["-13/19", [0, 0, 1, 0]], ["5198/4959", [0, 0, 1, 1]], ["5/22", [1, 0, 0, 0]], ["4519/4147", [1, 0, 0, 1]], ["-6178/2717", [1, 0, 1, 0]], ["-379135/218196", [1, 0, 1, 1]]],
+      [["21529163/3145728", [0, 0, 0, 1]], ["-490933/3145728", [0, 0, 1, 0]], ["-15237707/3145728", [0, 0, 1, 1]], ["-490933/3145728", [1, 0, 0, 0]], ["-214800697/34603008", [1, 0, 0, 1]], ["6782389/3145728", [1, 0, 1, 0]], ["274359685/80740352", [1, 0, 1, 1]]]
+    ],
+    "root_box": [["0", "1"], ["0", "0"], ["0", "1"], ["0", "1"]],
+    "splits":
+      {"axis": 0, "cut": "1/2",
+       "lo":
+        {"axis": 2, "cut": "1/2",
+         "lo":
+          {"violated": 0, "sense": ">0"},
+         "hi":
+          {"axis": 3, "cut": "1/2",
+           "lo":
+            {"axis": 0, "cut": "1/4",
+             "lo":
+              {"axis": 2, "cut": "3/4",
+               "lo":
+                {"axis": 3, "cut": "1/4",
+                 "lo":
+                  {"axis": 0, "cut": "1/8",
+                   "lo":
+                    {"violated": 0, "sense": ">0"},
+                   "hi":
+                    {"violated": 1, "sense": ">0"}},
+                 "hi":
+                  {"violated": 1, "sense": ">0"}},
+               "hi":
+                {"axis": 3, "cut": "1/4",
+                 "lo":
+                  {"axis": 0, "cut": "1/8",
+                   "lo":
+                    {"axis": 2, "cut": "7/8",
+                     "lo":
+                      {"violated": 0, "sense": ">0"},
+                     "hi":
+                      {"axis": 3, "cut": "1/8",
+                       "lo":
+                        {"axis": 0, "cut": "1/16",
+                         "lo":
+                          {"violated": 0, "sense": ">0"},
+                         "hi":
+                          {"axis": 2, "cut": "15/16",
+                           "lo":
+                            {"axis": 3, "cut": "1/16",
+                             "lo":
+                              {"axis": 0, "cut": "3/32",
+                               "lo":
+                                {"violated": 0, "sense": ">0"},
+                               "hi":
+                                {"violated": 1, "sense": ">0"}},
+                             "hi":
+                              {"violated": 1, "sense": ">0"}},
+                           "hi":
+                            {"axis": 3, "cut": "1/16",
+                             "lo":
+                              {"axis": 0, "cut": "3/32",
+                               "lo":
+                                {"axis": 2, "cut": "31/32",
+                                 "lo":
+                                  {"axis": 3, "cut": "1/32",
+                                   "lo":
+                                    {"axis": 0, "cut": "5/64",
+                                     "lo":
+                                      {"violated": 0, "sense": ">0"},
+                                     "hi":
+                                      {"axis": 2, "cut": "61/64",
+                                       "lo":
+                                        {"violated": 0, "sense": ">0"},
+                                       "hi":
+                                        {"axis": 3, "cut": "1/64",
+                                         "lo":
+                                          {"axis": 0, "cut": "11/128",
+                                           "lo":
+                                            {"violated": 0, "sense": ">0"},
+                                           "hi":
+                                            {"violated": 1, "sense": ">0"}},
+                                         "hi":
+                                          {"violated": 0, "sense": ">0"}}}},
+                                   "hi":
+                                    {"violated": 0, "sense": ">0"}},
+                                 "hi":
+                                  {"axis": 3, "cut": "1/32",
+                                   "lo":
+                                    {"axis": 0, "cut": "5/64",
+                                     "lo":
+                                      {"axis": 2, "cut": "63/64",
+                                       "lo":
+                                        {"violated": 0, "sense": ">0"},
+                                       "hi":
+                                        {"axis": 3, "cut": "1/64",
+                                         "lo":
+                                          {"axis": 0, "cut": "9/128",
+                                           "lo":
+                                            {"violated": 0, "sense": ">0"},
+                                           "hi":
+                                            {"axis": 2, "cut": "127/128",
+                                             "lo":
+                                              {"violated": 0, "sense": ">0"},
+                                             "hi":
+                                              {"axis": 3, "cut": "1/128",
+                                               "lo":
+                                                {"axis": 0, "cut": "19/256",
+                                                 "lo":
+                                                  {"violated": 0, "sense": ">0"},
+                                                 "hi":
+                                                  {"axis": 2, "cut": "255/256",
+                                                   "lo":
+                                                    {"violated": 0, "sense": ">0"},
+                                                   "hi":
+                                                    {"axis": 3, "cut": "1/256",
+                                                     "lo":
+                                                      {"axis": 0, "cut": "39/512",
+                                                       "lo":
+                                                        {"violated": 0, "sense": ">0"},
+                                                       "hi":
+                                                        {"axis": 2, "cut": "511/512",
+                                                         "lo":
+                                                          {"violated": 0, "sense": ">0"},
+                                                         "hi":
+                                                          {"axis": 3, "cut": "1/512",
+                                                           "lo":
+                                                            {"axis": 0, "cut": "79/1024",
+                                                             "lo":
+                                                              {"violated": 0, "sense": ">0"},
+                                                             "hi":
+                                                              {"axis": 2, "cut": "1023/1024",
+                                                               "lo":
+                                                                {"violated": 0, "sense": ">0"},
+                                                               "hi":
+                                                                {"axis": 3, "cut": "1/1024",
+                                                                 "lo":
+                                                                  {"axis": 0, "cut": "159/2048",
+                                                                   "lo":
+                                                                    {"violated": 0, "sense": ">0"},
+                                                                   "hi":
+                                                                    {"axis": 2, "cut": "2047/2048",
+                                                                     "lo":
+                                                                      {"violated": 0, "sense": ">0"},
+                                                                     "hi":
+                                                                      {"axis": 3, "cut": "1/2048",
+                                                                       "lo":
+                                                                        {"axis": 0, "cut": "319/4096",
+                                                                         "lo":
+                                                                          {"violated": 0, "sense": ">0"},
+                                                                         "hi":
+                                                                          {"axis": 2, "cut": "4095/4096",
+                                                                           "lo":
+                                                                            {"violated": 0, "sense": ">0"},
+                                                                           "hi":
+                                                                            {"axis": 3, "cut": "1/4096",
+                                                                             "lo":
+                                                                              {"axis": 0, "cut": "639/8192",
+                                                                               "lo":
+                                                                                {"violated": 0, "sense": ">0"},
+                                                                               "hi":
+                                                                                {"axis": 2, "cut": "8191/8192",
+                                                                                 "lo":
+                                                                                  {"axis": 3, "cut": "1/8192",
+                                                                                   "lo":
+                                                                                    {"axis": 0, "cut": "1279/16384",
+                                                                                     "lo":
+                                                                                      {"violated": 0, "sense": ">0"},
+                                                                                     "hi":
+                                                                                      {"violated": 1, "sense": ">0"}},
+                                                                                   "hi":
+                                                                                    {"violated": 1, "sense": ">0"}},
+                                                                                 "hi":
+                                                                                  {"axis": 3, "cut": "1/8192",
+                                                                                   "lo":
+                                                                                    {"axis": 0, "cut": "1279/16384",
+                                                                                     "lo":
+                                                                                      {"axis": 2, "cut": "16383/16384",
+                                                                                       "lo":
+                                                                                        {"violated": 0, "sense": ">0"},
+                                                                                       "hi":
+                                                                                        {"axis": 3, "cut": "1/16384",
+                                                                                         "lo":
+                                                                                          {"axis": 0, "cut": "2557/32768",
+                                                                                           "lo":
+                                                                                            {"violated": 0, "sense": ">0"},
+                                                                                           "hi":
+                                                                                            {"violated": 1, "sense": ">0"}},
+                                                                                         "hi":
+                                                                                          {"violated": 1, "sense": ">0"}}},
+                                                                                     "hi":
+                                                                                      {"violated": 1, "sense": ">0"}},
+                                                                                   "hi":
+                                                                                    {"violated": 1, "sense": ">0"}}}},
+                                                                             "hi":
+                                                                              {"violated": 1, "sense": ">0"}}}},
+                                                                       "hi":
+                                                                        {"violated": 0, "sense": ">0"}}}},
+                                                                 "hi":
+                                                                  {"violated": 0, "sense": ">0"}}}},
+                                                           "hi":
+                                                            {"violated": 0, "sense": ">0"}}}},
+                                                     "hi":
+                                                      {"violated": 0, "sense": ">0"}}}},
+                                               "hi":
+                                                {"violated": 0, "sense": ">0"}}}},
+                                         "hi":
+                                          {"violated": 0, "sense": ">0"}}},
+                                     "hi":
+                                      {"axis": 2, "cut": "63/64",
+                                       "lo":
+                                        {"axis": 3, "cut": "1/64",
+                                         "lo":
+                                          {"axis": 0, "cut": "11/128",
+                                           "lo":
+                                            {"axis": 2, "cut": "125/128",
+                                             "lo":
+                                              {"violated": 0, "sense": ">0"},
+                                             "hi":
+                                              {"axis": 3, "cut": "1/128",
+                                               "lo":
+                                                {"axis": 0, "cut": "21/256",
+                                                 "lo":
+                                                  {"violated": 0, "sense": ">0"},
+                                                 "hi":
+                                                  {"violated": 1, "sense": ">0"}},
+                                               "hi":
+                                                {"violated": 0, "sense": ">0"}}},
+                                           "hi":
+                                            {"violated": 1, "sense": ">0"}},
+                                         "hi":
+                                          {"violated": 1, "sense": ">0"}},
+                                       "hi":
+                                        {"axis": 3, "cut": "1/64",
+                                         "lo":
+                                          {"axis": 0, "cut": "11/128",
+                                           "lo":
+                                            {"axis": 2, "cut": "127/128",
+                                             "lo":
+                                              {"axis": 3, "cut": "1/128",
+                                               "lo":
+                                                {"axis": 0, "cut": "21/256",
+                                                 "lo":
+                                                  {"axis": 2, "cut": "253/256",
+                                                   "lo":
+                                                    {"violated": 0, "sense": ">0"},
+                                                   "hi":
+                                                    {"violated": 1, "sense": ">0"}},
+                                                 "hi":
+                                                  {"violated": 1, "sense": ">0"}},
+                                               "hi":
+                                                {"violated": 1, "sense": ">0"}},
+                                             "hi":
+                                              {"violated": 1, "sense": ">0"}},
+                                           "hi":
+                                            {"violated": 1, "sense": ">0"}},
+                                         "hi":
+                                          {"violated": 1, "sense": ">0"}}}},
+                                   "hi":
+                                    {"violated": 1, "sense": ">0"}}},
+                               "hi":
+                                {"violated": 1, "sense": ">0"}},
+                             "hi":
+                              {"violated": 1, "sense": ">0"}}}},
+                       "hi":
+                        {"violated": 1, "sense": ">0"}}},
+                   "hi":
+                    {"violated": 1, "sense": ">0"}},
+                 "hi":
+                  {"violated": 1, "sense": ">0"}}},
+             "hi":
+              {"violated": 1, "sense": ">0"}},
+           "hi":
+            {"violated": 1, "sense": ">0"}}},
+       "hi":
+        {"axis": 2, "cut": "1/2",
+         "lo":
+          {"axis": 3, "cut": "1/2",
+           "lo":
+            {"axis": 0, "cut": "3/4",
+             "lo":
+              {"axis": 2, "cut": "1/4",
+               "lo":
+                {"violated": 0, "sense": ">0"},
+               "hi":
+                {"violated": 1, "sense": ">0"}},
+             "hi":
+              {"axis": 2, "cut": "1/4",
+               "lo":
+                {"violated": 0, "sense": ">0"},
+               "hi":
+                {"violated": 1, "sense": ">0"}}},
+           "hi":
+            {"violated": 1, "sense": ">0"}},
+         "hi":
+          {"violated": 1, "sense": ">0"}}}
+  }
+}

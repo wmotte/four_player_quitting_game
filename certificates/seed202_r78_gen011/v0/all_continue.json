@@ -1,0 +1,18 @@
+{
+  "format_version": 1,
+  "id": "v1/v0/seed202_r78_gen011/all_continue",
+  "game": "seed202_r78_gen011",
+  "case": "V0b all-continue",
+  "claim": "against the all-continue profile (every x_j = 0, which never terminates and therefore pays everyone 0) player 1 gains more than eps = 400005/1048576 by quitting alone, so all-continue is not an eps-equilibrium (AKRS 2024 Thm 4.15, second hypothesis).",
+  "type": "witness",
+  "metrics": {"n_vars": 4, "n_conditions": 1, "max_coeff_bits": 21},
+  "data": {
+    "point": {"x1": "0", "x2": "0", "x3": "0", "x4": "0"},
+    "conditions": [
+      {"name": "solo_quit_gain_minus_eps",
+       "vars": ["x1", "x2", "x3", "x4"],
+       "poly": [["648571/1048576", [0, 0, 0, 0]], ["7/51", [0, 0, 0, 1]], ["-147/17", [0, 0, 1, 0]], ["17611/1632", [0, 0, 1, 1]], ["-13/3", [0, 1, 0, 0]], ["2833/663", [0, 1, 0, 1]], ["1613/102", [0, 1, 1, 0]], ["-1910917/109616", [0, 1, 1, 1]]],
+       "sense": ">0"}
+    ]
+  }
+}

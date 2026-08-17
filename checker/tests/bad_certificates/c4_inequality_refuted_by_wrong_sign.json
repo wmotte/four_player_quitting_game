@@ -1,0 +1,44 @@
+{
+  "format_version": 1,
+  "id": "fixture/bnb/inequality_wrong_sign",
+  "game": "fixture",
+  "claim": "no point of [0,1] satisfies x1 - 2 <= 0",
+  "type": "bnb_trace",
+  "domain": {
+    "note": "test fixture"
+  },
+  "data": {
+    "vars": [
+      "x1"
+    ],
+    "conditions": [
+      [
+        [
+          "1",
+          [
+            1
+          ]
+        ],
+        [
+          "-2",
+          [
+            0
+          ]
+        ]
+      ]
+    ],
+    "condition_senses": [
+      "<=0"
+    ],
+    "root_box": [
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "splits": {
+      "violated": 0,
+      "sense": "<0"
+    }
+  }
+}

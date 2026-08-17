@@ -1,0 +1,56 @@
+{
+  "format_version": 1,
+  "id": "fixture/witness/point",
+  "game": "fixture",
+  "claim": "at the larger deviation level this point is a near-equilibrium",
+  "type": "witness",
+  "domain": {
+    "note": "test fixture"
+  },
+  "data": {
+    "point": {
+      "x1": "3/4",
+      "x2": "1/2"
+    },
+    "conditions": [
+      {
+        "poly": [
+          [
+            "1",
+            [
+              1,
+              0
+            ]
+          ],
+          [
+            "-1/2",
+            [
+              0,
+              0
+            ]
+          ]
+        ],
+        "sense": "<=0"
+      },
+      {
+        "poly": [
+          [
+            "1",
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            "-1/2",
+            [
+              0,
+              0
+            ]
+          ]
+        ],
+        "sense": "==0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": 1,
+  "id": "v1/no_fap/seed202_r78_gen011/solo4",
+  "game": "seed202_r78_gen011",
+  "case": "solo4",
+  "claim": "player 4 has no constant absorption path: the solo vector r-hat({4}), which is column 4 of the shifted unilateral matrix, has a negative coordinate — entry 1, exported below as a constant polynomial whose coefficient is that payoff entry. So the piece that the essential-APS recursion would contribute from the constant path with iota identically 4 is absent at every step, for this player.",
+  "type": "witness",
+  "metrics": {"n_vars": 1, "n_conditions": 1, "max_coeff_bits": 2},
+  "data": {
+    "point": {"t": "0"},
+    "conditions": [
+      {"name": "negative_entry",
+       "vars": ["t"],
+       "poly": [["-2/3", [0]]],
+       "sense": "<0"}
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "id": "v1/front_a/seed202_r78_gen011/K134",
+  "game": "seed202_r78_gen011",
+  "case": "A K{1,3,4} S{2}",
+  "claim": "front [A], coalition {1,3,4}: the profile in which exactly these players quit outright is not a Nash equilibrium of the stage game G(c), for ANY continuation vector c. Player 4 is a member of the coalition who strictly gains by staying: the deviation gain D_4 of src/stage.jl is negative at the profile, while the stage-Nash conditions require it to be at least zero. The two conditions below are that deviation gain and the weight z_4(x) = prod_{j != i} (1 - x_j) with which the continuation enters it. D_i is affine in c_i with coefficient -z_i and involves no other c_j, so z_i = 0 at this profile makes the value a constant and the sign unconditional -- in particular the lone-quitter branch of case T, which needs c in W_0 and hence (R2), is not used here. Coefficients are the payoff entries, so substituting the point is a check about this game (docs/G3_MIXED_APS.md 12.15(b), 12.20).",
+  "type": "witness",
+  "metrics": {"n_vars": 8, "n_conditions": 2, "max_coeff_bits": 29},
+  "data": {
+    "point": {"c1": "0", "c2": "0", "c3": "0", "c4": "0", "x1": "1", "x2": "0", "x3": "1", "x4": "1"},
+    "conditions": [
+      {"name": "indep4",
+       "vars": ["c1", "c2", "c3", "c4", "x1", "x2", "x3", "x4"],
+       "poly": [["1", [0, 0, 0, 0, 0, 0, 0, 0]], ["-1", [0, 0, 0, 0, 0, 0, 1, 0]], ["-1", [0, 0, 0, 0, 0, 1, 0, 0]], ["1", [0, 0, 0, 0, 0, 1, 1, 0]], ["-1", [0, 0, 0, 0, 1, 0, 0, 0]], ["1", [0, 0, 0, 0, 1, 0, 1, 0]], ["1", [0, 0, 0, 0, 1, 1, 0, 0]], ["-1", [0, 0, 0, 0, 1, 1, 1, 0]]],
+       "sense": "==0"},
+      {"name": "dev4",
+       "vars": ["c1", "c2", "c3", "c4", "x1", "x2", "x3", "x4"],
+       "poly": [["1", [0, 0, 0, 0, 0, 0, 0, 0]], ["71/19", [0, 0, 0, 0, 0, 0, 1, 0]], ["-10/9", [0, 0, 0, 0, 0, 1, 0, 0]], ["-196339/42408", [0, 0, 0, 0, 0, 1, 1, 0]], ["-61/12", [0, 0, 0, 0, 1, 0, 0, 0]], ["-6835/5244", [0, 0, 0, 0, 1, 0, 1, 0]], ["9377/1800", [0, 0, 0, 0, 1, 1, 0, 0]], ["281168303/134115300", [0, 0, 0, 0, 1, 1, 1, 0]], ["-1", [0, 0, 0, 1, 0, 0, 0, 0]], ["1", [0, 0, 0, 1, 0, 0, 1, 0]], ["1", [0, 0, 0, 1, 0, 1, 0, 0]], ["-1", [0, 0, 0, 1, 0, 1, 1, 0]], ["1", [0, 0, 0, 1, 1, 0, 0, 0]], ["-1", [0, 0, 0, 1, 1, 0, 1, 0]], ["-1", [0, 0, 0, 1, 1, 1, 0, 0]], ["1", [0, 0, 0, 1, 1, 1, 1, 0]]],
+       "sense": "<0"}
+    ]
+  }
+}

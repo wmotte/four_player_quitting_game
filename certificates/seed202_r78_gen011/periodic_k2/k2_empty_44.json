@@ -1,0 +1,23 @@
+{
+  "format_version": 1,
+  "id": "v2/k2/k2_empty_44",
+  "game": "seed202_r78_gen011",
+  "case": "B q{}m{2}|q{1}m{3,4}",
+  "claim": "period-2 support-pattern indifference system has no solution over any field extension of Q",
+  "type": "nullstellensatz",
+  "domain": {"note": "emptiness is unconditional"},
+  "metrics": {"n_vars": 3, "n_eqs": 3, "n_terms_statement": 12, "work": 10, "max_coeff_bits": 30, "max_total_degree": 2},
+  "data": {
+    "vars": ["x2", "x7", "x8"],
+    "equations": [
+      [["231", [0, 0, 0]], ["-147", [0, 0, 1]], ["-462", [0, 1, 0]], ["334", [0, 1, 1]]],
+      [["-3570", [0, 0, 0]], ["4252", [0, 0, 1]]],
+      [["-21413", [0, 0, 0]], ["12761", [0, 1, 0]]]
+    ],
+    "cofactors": [
+      [["-3875698/763901145", [0, 0, 0]]],
+      [["-12761/72752490", [0, 0, 0]], ["304441/763901145", [0, 1, 0]]],
+      [["-2626/36376245", [0, 0, 0]]]
+    ]
+  }
+}

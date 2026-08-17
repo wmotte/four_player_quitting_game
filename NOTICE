@@ -1,0 +1,13 @@
+four_player_quitting_game
+Copyright 2026 Wim Otte
+
+Licensed under the Apache License, Version 2.0.
+
+The JSON certificates in certificates/ were produced by an exact-arithmetic
+pipeline written in Julia and are checked here by an independent Python
+program that shares no code with that pipeline. The Lean 4 files under lean/
+are a mechanical translation of those JSON certificates. They are not
+hand-written proofs.
+
+Mathlib is used under its own license (Apache-2.0). Lean 4 is used under the
+Apache-2.0 license of the Lean FRO.

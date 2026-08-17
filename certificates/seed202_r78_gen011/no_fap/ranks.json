@@ -1,0 +1,42 @@
+{
+  "format_version": 1,
+  "id": "v1/no_fap/seed202_r78_gen011/ranks",
+  "game": "seed202_r78_gen011",
+  "case": "ranks",
+  "claim": "the successor graph is acyclic, with depth bound 4. The exported point is a rank function on the four players; the conditions require every rank to be non-negative and to drop by at least one along each edge the twelve edge certificates declare present. A function with those properties exists only on an acyclic graph, and it bounds the longest path out of player i by rank_i. Combined with the four solo certificates this gives A4 for this game: the essential-APS recursion can produce a nonempty piece for player i at step k only from a path of k edges out of i, so every iterate is empty from step 4 on. The step from there to `no sequentially perfect Flesch absorption path` is Krasikov Prop. 4.9, a human theorem and not part of this certificate; and A4 closes the jump-free regime only together with (L8), see the simultaneous_quit group.",
+  "type": "witness",
+  "metrics": {"n_vars": 4, "n_conditions": 7, "max_coeff_bits": 1},
+  "data": {
+    "point": {"rank1": "2", "rank2": "3", "rank3": "0", "rank4": "1"},
+    "conditions": [
+      {"name": "rank1_nonneg",
+       "vars": ["rank1", "rank2", "rank3", "rank4"],
+       "poly": [["1", [1, 0, 0, 0]]],
+       "sense": ">=0"},
+      {"name": "rank2_nonneg",
+       "vars": ["rank1", "rank2", "rank3", "rank4"],
+       "poly": [["1", [0, 1, 0, 0]]],
+       "sense": ">=0"},
+      {"name": "rank3_nonneg",
+       "vars": ["rank1", "rank2", "rank3", "rank4"],
+       "poly": [["1", [0, 0, 1, 0]]],
+       "sense": ">=0"},
+      {"name": "rank4_nonneg",
+       "vars": ["rank1", "rank2", "rank3", "rank4"],
+       "poly": [["1", [0, 0, 0, 1]]],
+       "sense": ">=0"},
+      {"name": "drop_1_4",
+       "vars": ["rank1", "rank2", "rank3", "rank4"],
+       "poly": [["-1", [0, 0, 0, 0]], ["-1", [0, 0, 0, 1]], ["1", [1, 0, 0, 0]]],
+       "sense": ">=0"},
+      {"name": "drop_2_1",
+       "vars": ["rank1", "rank2", "rank3", "rank4"],
+       "poly": [["-1", [0, 0, 0, 0]], ["1", [0, 1, 0, 0]], ["-1", [1, 0, 0, 0]]],
+       "sense": ">=0"},
+      {"name": "drop_4_3",
+       "vars": ["rank1", "rank2", "rank3", "rank4"],
+       "poly": [["-1", [0, 0, 0, 0]], ["1", [0, 0, 0, 1]], ["-1", [0, 0, 1, 0]]],
+       "sense": ">=0"}
+    ]
+  }
+}

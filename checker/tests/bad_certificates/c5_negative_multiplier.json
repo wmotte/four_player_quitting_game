@@ -1,0 +1,93 @@
+{
+  "format_version": 1,
+  "id": "fixture/aps/shrink",
+  "game": "fixture",
+  "claim": "the iteration contracts to the empty set in two steps",
+  "type": "aps_trace",
+  "domain": {
+    "note": "test fixture"
+  },
+  "data": {
+    "iterations": [
+      {
+        "polytope_H": [
+          {
+            "normal": [
+              "1"
+            ],
+            "offset": "1"
+          },
+          {
+            "normal": [
+              "-1"
+            ],
+            "offset": "0"
+          }
+        ]
+      },
+      {
+        "polytope_H": [
+          {
+            "normal": [
+              "1"
+            ],
+            "offset": "1/2"
+          },
+          {
+            "normal": [
+              "-1"
+            ],
+            "offset": "0"
+          }
+        ],
+        "inclusion_cofactors": {
+          "multipliers": [
+            [
+              "2",
+              "-1"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      {
+        "polytope_H": [
+          {
+            "normal": [
+              "1"
+            ],
+            "offset": "-1"
+          },
+          {
+            "normal": [
+              "-1"
+            ],
+            "offset": "0"
+          }
+        ],
+        "inclusion_cofactors": {
+          "multipliers": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        }
+      }
+    ],
+    "final": "empty",
+    "emptiness_witness": {
+      "farkas": [
+        "1",
+        "1"
+      ]
+    }
+  }
+}

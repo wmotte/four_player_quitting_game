@@ -1,0 +1,18 @@
+name: certificates
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check the candidate certificates
+        run: python3 checker/check_certificates.py certificates/seed202_r78_gen011
+      - name: Run the audit suite
+        run: python3 checker/run_tests.py

@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "id": "v1/front_a/seed202_r78_gen011/K1",
+  "game": "seed202_r78_gen011",
+  "case": "A K{1} S{2,3,4}",
+  "claim": "front [A], coalition {1}: the profile in which exactly these players quit outright is not a Nash equilibrium of the stage game G(c), for ANY continuation vector c. Player 2 is a stayer who strictly gains by quitting: the deviation gain D_2 of src/stage.jl is positive at the profile, while the stage-Nash conditions require it to be at most zero. The two conditions below are that deviation gain and the weight z_2(x) = prod_{j != i} (1 - x_j) with which the continuation enters it. D_i is affine in c_i with coefficient -z_i and involves no other c_j, so z_i = 0 at this profile makes the value a constant and the sign unconditional -- in particular the lone-quitter branch of case T, which needs c in W_0 and hence (R2), is not used here. Coefficients are the payoff entries, so substituting the point is a check about this game (docs/G3_MIXED_APS.md 12.15(b), 12.20).",
+  "type": "witness",
+  "metrics": {"n_vars": 8, "n_conditions": 2, "max_coeff_bits": 23},
+  "data": {
+    "point": {"c1": "0", "c2": "0", "c3": "0", "c4": "0", "x1": "1", "x2": "0", "x3": "0", "x4": "0"},
+    "conditions": [
+      {"name": "indep2",
+       "vars": ["c1", "c2", "c3", "c4", "x1", "x2", "x3", "x4"],
+       "poly": [["1", [0, 0, 0, 0, 0, 0, 0, 0]], ["-1", [0, 0, 0, 0, 0, 0, 0, 1]], ["-1", [0, 0, 0, 0, 0, 0, 1, 0]], ["1", [0, 0, 0, 0, 0, 0, 1, 1]], ["-1", [0, 0, 0, 0, 1, 0, 0, 0]], ["1", [0, 0, 0, 0, 1, 0, 0, 1]], ["1", [0, 0, 0, 0, 1, 0, 1, 0]], ["-1", [0, 0, 0, 0, 1, 0, 1, 1]]],
+       "sense": "==0"},
+      {"name": "dev2",
+       "vars": ["c1", "c2", "c3", "c4", "x1", "x2", "x3", "x4"],
+       "poly": [["1", [0, 0, 0, 0, 0, 0, 0, 0]], ["-220/29", [0, 0, 0, 0, 0, 0, 0, 1]], ["-13/19", [0, 0, 0, 0, 0, 0, 1, 0]], ["29993/4959", [0, 0, 0, 0, 0, 0, 1, 1]], ["5/22", [0, 0, 0, 0, 1, 0, 0, 0]], ["30909/4147", [0, 0, 0, 0, 1, 0, 0, 1]], ["-11612/2717", [0, 0, 0, 0, 1, 0, 1, 0]], ["-8082397/1527372", [0, 0, 0, 0, 1, 0, 1, 1]], ["-1", [0, 1, 0, 0, 0, 0, 0, 0]], ["1", [0, 1, 0, 0, 0, 0, 0, 1]], ["1", [0, 1, 0, 0, 0, 0, 1, 0]], ["-1", [0, 1, 0, 0, 0, 0, 1, 1]], ["1", [0, 1, 0, 0, 1, 0, 0, 0]], ["-1", [0, 1, 0, 0, 1, 0, 0, 1]], ["-1", [0, 1, 0, 0, 1, 0, 1, 0]], ["1", [0, 1, 0, 0, 1, 0, 1, 1]]],
+       "sense": ">0"}
+    ]
+  }
+}

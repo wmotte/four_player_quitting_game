@@ -1,0 +1,380 @@
+{
+  "format_version": 1,
+  "id": "v1/v0/seed202_r78_gen011/minmax_lower_1",
+  "game": "seed202_r78_gen011",
+  "case": "V0 minmax lower bound, player 1",
+  "claim": "with L = -9145/65536, no stationary punishment z of player 1 satisfies both a(z) <= L and b(z) <= L*q(z), so the smallest level w_1 admitting one exceeds L; and v^1 >= w_1 unconditionally (docs/V0_MINIMAX.md 2.1). Coordinate x1 is pinned to 0: the punishment is played by the other players.",
+  "type": "bnb_trace",
+  "domain": {
+    "box": {"x1": ["0", "0"], "x2": ["0", "1"], "x3": ["0", "1"], "x4": ["0", "1"]}
+  },
+  "metrics": {"n_vars": 4, "n_conditions": 2, "n_leaves": 90, "tree_depth": 57, "max_coeff_bits": 29},
+  "data": {
+    "vars": ["x1", "x2", "x3", "x4"],
+    "condition_names": ["quit_at_most_L", "wait_at_most_L"],
+    "condition_senses": ["<=0", "<=0"],
+    "conditions": [
+      [["74681/65536", [0, 0, 0, 0]], ["8/17", [0, 0, 0, 1]], ["-45/17", [0, 0, 1, 0]], ["1337/544", [0, 0, 1, 1]], ["-3", [0, 1, 0, 0]], ["1475/442", [0, 1, 0, 1]], ["113/17", [0, 1, 1, 0]], ["-24475/3536", [0, 1, 1, 1]]],
+      [["92971/196608", [0, 0, 0, 1]], ["402361/65536", [0, 0, 1, 0]], ["-1665835/196608", [0, 0, 1, 1]], ["289579/196608", [0, 1, 0, 0]], ["-2748719/2555904", [0, 1, 0, 1]], ["-1829675/196608", [0, 1, 1, 0]], ["281295931/26411008", [0, 1, 1, 1]]]
+    ],
+    "root_box": [["0", "0"], ["0", "1"], ["0", "1"], ["0", "1"]],
+    "splits":
+      {"axis": 1, "cut": "1/2",
+       "lo":
+        {"axis": 2, "cut": "1/2",
+         "lo":
+          {"axis": 3, "cut": "1/2",
+           "lo":
+            {"axis": 1, "cut": "1/4",
+             "lo":
+              {"axis": 2, "cut": "1/4",
+               "lo":
+                {"violated": 0, "sense": ">0"},
+               "hi":
+                {"violated": 1, "sense": ">0"}},
+             "hi":
+              {"violated": 1, "sense": ">0"}},
+           "hi":
+            {"violated": 0, "sense": ">0"}},
+         "hi":
+          {"axis": 3, "cut": "1/2",
+           "lo":
+            {"violated": 1, "sense": ">0"},
+           "hi":
+            {"axis": 1, "cut": "1/4",
+             "lo":
+              {"axis": 2, "cut": "3/4",
+               "lo":
+                {"violated": 0, "sense": ">0"},
+               "hi":
+                {"axis": 3, "cut": "3/4",
+                 "lo":
+                  {"axis": 1, "cut": "1/8",
+                   "lo":
+                    {"violated": 1, "sense": ">0"},
+                   "hi":
+                    {"violated": 0, "sense": ">0"}},
+                 "hi":
+                  {"violated": 0, "sense": ">0"}}},
+             "hi":
+              {"violated": 0, "sense": ">0"}}}},
+       "hi":
+        {"axis": 2, "cut": "1/2",
+         "lo":
+          {"axis": 3, "cut": "1/2",
+           "lo":
+            {"axis": 1, "cut": "3/4",
+             "lo":
+              {"violated": 1, "sense": ">0"},
+             "hi":
+              {"axis": 2, "cut": "1/4",
+               "lo":
+                {"violated": 1, "sense": ">0"},
+               "hi":
+                {"axis": 3, "cut": "1/4",
+                 "lo":
+                  {"axis": 1, "cut": "7/8",
+                   "lo":
+                    {"violated": 1, "sense": ">0"},
+                   "hi":
+                    {"axis": 2, "cut": "3/8",
+                     "lo":
+                      {"violated": 1, "sense": ">0"},
+                     "hi":
+                      {"axis": 3, "cut": "1/8",
+                       "lo":
+                        {"axis": 1, "cut": "15/16",
+                         "lo":
+                          {"violated": 1, "sense": ">0"},
+                         "hi":
+                          {"axis": 2, "cut": "7/16",
+                           "lo":
+                            {"violated": 1, "sense": ">0"},
+                           "hi":
+                            {"axis": 3, "cut": "1/16",
+                             "lo":
+                              {"axis": 1, "cut": "31/32",
+                               "lo":
+                                {"axis": 2, "cut": "15/32",
+                                 "lo":
+                                  {"violated": 1, "sense": ">0"},
+                                 "hi":
+                                  {"violated": 0, "sense": ">0"}},
+                               "hi":
+                                {"axis": 2, "cut": "15/32",
+                                 "lo":
+                                  {"axis": 3, "cut": "1/32",
+                                   "lo":
+                                    {"axis": 1, "cut": "63/64",
+                                     "lo":
+                                      {"violated": 1, "sense": ">0"},
+                                     "hi":
+                                      {"axis": 2, "cut": "29/64",
+                                       "lo":
+                                        {"violated": 1, "sense": ">0"},
+                                       "hi":
+                                        {"axis": 3, "cut": "1/64",
+                                         "lo":
+                                          {"axis": 1, "cut": "127/128",
+                                           "lo":
+                                            {"violated": 1, "sense": ">0"},
+                                           "hi":
+                                            {"axis": 2, "cut": "59/128",
+                                             "lo":
+                                              {"violated": 1, "sense": ">0"},
+                                             "hi":
+                                              {"axis": 3, "cut": "1/128",
+                                               "lo":
+                                                {"axis": 1, "cut": "255/256",
+                                                 "lo":
+                                                  {"axis": 2, "cut": "119/256",
+                                                   "lo":
+                                                    {"violated": 1, "sense": ">0"},
+                                                   "hi":
+                                                    {"axis": 3, "cut": "1/256",
+                                                     "lo":
+                                                      {"axis": 1, "cut": "509/512",
+                                                       "lo":
+                                                        {"violated": 1, "sense": ">0"},
+                                                       "hi":
+                                                        {"axis": 2, "cut": "239/512",
+                                                         "lo":
+                                                          {"violated": 1, "sense": ">0"},
+                                                         "hi":
+                                                          {"violated": 0, "sense": ">0"}}},
+                                                     "hi":
+                                                      {"violated": 0, "sense": ">0"}}},
+                                                 "hi":
+                                                  {"axis": 2, "cut": "119/256",
+                                                   "lo":
+                                                    {"violated": 1, "sense": ">0"},
+                                                   "hi":
+                                                    {"axis": 3, "cut": "1/256",
+                                                     "lo":
+                                                      {"axis": 1, "cut": "511/512",
+                                                       "lo":
+                                                        {"axis": 2, "cut": "239/512",
+                                                         "lo":
+                                                          {"violated": 1, "sense": ">0"},
+                                                         "hi":
+                                                          {"violated": 0, "sense": ">0"}},
+                                                       "hi":
+                                                        {"axis": 2, "cut": "239/512",
+                                                         "lo":
+                                                          {"axis": 3, "cut": "1/512",
+                                                           "lo":
+                                                            {"axis": 1, "cut": "1023/1024",
+                                                             "lo":
+                                                              {"axis": 2, "cut": "477/1024",
+                                                               "lo":
+                                                                {"violated": 1, "sense": ">0"},
+                                                               "hi":
+                                                                {"violated": 0, "sense": ">0"}},
+                                                             "hi":
+                                                              {"axis": 2, "cut": "477/1024",
+                                                               "lo":
+                                                                {"axis": 3, "cut": "1/1024",
+                                                                 "lo":
+                                                                  {"axis": 1, "cut": "2047/2048",
+                                                                   "lo":
+                                                                    {"axis": 2, "cut": "953/2048",
+                                                                     "lo":
+                                                                      {"violated": 1, "sense": ">0"},
+                                                                     "hi":
+                                                                      {"violated": 0, "sense": ">0"}},
+                                                                   "hi":
+                                                                    {"axis": 2, "cut": "953/2048",
+                                                                     "lo":
+                                                                      {"axis": 3, "cut": "1/2048",
+                                                                       "lo":
+                                                                        {"axis": 1, "cut": "4095/4096",
+                                                                         "lo":
+                                                                          {"violated": 1, "sense": ">0"},
+                                                                         "hi":
+                                                                          {"axis": 2, "cut": "1905/4096",
+                                                                           "lo":
+                                                                            {"violated": 1, "sense": ">0"},
+                                                                           "hi":
+                                                                            {"axis": 3, "cut": "1/4096",
+                                                                             "lo":
+                                                                              {"axis": 1, "cut": "8191/8192",
+                                                                               "lo":
+                                                                                {"axis": 2, "cut": "3811/8192",
+                                                                                 "lo":
+                                                                                  {"violated": 1, "sense": ">0"},
+                                                                                 "hi":
+                                                                                  {"violated": 0, "sense": ">0"}},
+                                                                               "hi":
+                                                                                {"axis": 2, "cut": "3811/8192",
+                                                                                 "lo":
+                                                                                  {"axis": 3, "cut": "1/8192",
+                                                                                   "lo":
+                                                                                    {"axis": 1, "cut": "16383/16384",
+                                                                                     "lo":
+                                                                                      {"axis": 2, "cut": "7621/16384",
+                                                                                       "lo":
+                                                                                        {"violated": 1, "sense": ">0"},
+                                                                                       "hi":
+                                                                                        {"violated": 0, "sense": ">0"}},
+                                                                                     "hi":
+                                                                                      {"axis": 2, "cut": "7621/16384",
+                                                                                       "lo":
+                                                                                        {"axis": 3, "cut": "1/16384",
+                                                                                         "lo":
+                                                                                          {"axis": 1, "cut": "32767/32768",
+                                                                                           "lo":
+                                                                                            {"axis": 2, "cut": "15241/32768",
+                                                                                             "lo":
+                                                                                              {"violated": 1, "sense": ">0"},
+                                                                                             "hi":
+                                                                                              {"violated": 0, "sense": ">0"}},
+                                                                                           "hi":
+                                                                                            {"axis": 2, "cut": "15241/32768",
+                                                                                             "lo":
+                                                                                              {"axis": 3, "cut": "1/32768",
+                                                                                               "lo":
+                                                                                                {"axis": 1, "cut": "65535/65536",
+                                                                                                 "lo":
+                                                                                                  {"violated": 1, "sense": ">0"},
+                                                                                                 "hi":
+                                                                                                  {"axis": 2, "cut": "30481/65536",
+                                                                                                   "lo":
+                                                                                                    {"violated": 1, "sense": ">0"},
+                                                                                                   "hi":
+                                                                                                    {"axis": 3, "cut": "1/65536",
+                                                                                                     "lo":
+                                                                                                      {"axis": 1, "cut": "131071/131072",
+                                                                                                       "lo":
+                                                                                                        {"violated": 1, "sense": ">0"},
+                                                                                                       "hi":
+                                                                                                        {"axis": 2, "cut": "60963/131072",
+                                                                                                         "lo":
+                                                                                                          {"violated": 1, "sense": ">0"},
+                                                                                                         "hi":
+                                                                                                          {"axis": 3, "cut": "1/131072",
+                                                                                                           "lo":
+                                                                                                            {"axis": 1, "cut": "262143/262144",
+                                                                                                             "lo":
+                                                                                                              {"violated": 1, "sense": ">0"},
+                                                                                                             "hi":
+                                                                                                              {"axis": 2, "cut": "121927/262144",
+                                                                                                               "lo":
+                                                                                                                {"violated": 1, "sense": ">0"},
+                                                                                                               "hi":
+                                                                                                                {"axis": 3, "cut": "1/262144",
+                                                                                                                 "lo":
+                                                                                                                  {"axis": 1, "cut": "524287/524288",
+                                                                                                                   "lo":
+                                                                                                                    {"violated": 1, "sense": ">0"},
+                                                                                                                   "hi":
+                                                                                                                    {"axis": 2, "cut": "243855/524288",
+                                                                                                                     "lo":
+                                                                                                                      {"violated": 1, "sense": ">0"},
+                                                                                                                     "hi":
+                                                                                                                      {"violated": 0, "sense": ">0"}}},
+                                                                                                                 "hi":
+                                                                                                                  {"violated": 0, "sense": ">0"}}}},
+                                                                                                           "hi":
+                                                                                                            {"violated": 1, "sense": ">0"}}}},
+                                                                                                     "hi":
+                                                                                                      {"violated": 1, "sense": ">0"}}}},
+                                                                                               "hi":
+                                                                                                {"violated": 1, "sense": ">0"}},
+                                                                                             "hi":
+                                                                                              {"violated": 0, "sense": ">0"}}},
+                                                                                         "hi":
+                                                                                          {"axis": 1, "cut": "32767/32768",
+                                                                                           "lo":
+                                                                                            {"violated": 1, "sense": ">0"},
+                                                                                           "hi":
+                                                                                            {"axis": 2, "cut": "15241/32768",
+                                                                                             "lo":
+                                                                                              {"violated": 1, "sense": ">0"},
+                                                                                             "hi":
+                                                                                              {"violated": 0, "sense": ">0"}}}},
+                                                                                       "hi":
+                                                                                        {"violated": 0, "sense": ">0"}}},
+                                                                                   "hi":
+                                                                                    {"violated": 0, "sense": ">0"}},
+                                                                                 "hi":
+                                                                                  {"violated": 0, "sense": ">0"}}},
+                                                                             "hi":
+                                                                              {"violated": 0, "sense": ">0"}}}},
+                                                                       "hi":
+                                                                        {"axis": 1, "cut": "4095/4096",
+                                                                         "lo":
+                                                                          {"violated": 1, "sense": ">0"},
+                                                                         "hi":
+                                                                          {"axis": 2, "cut": "1905/4096",
+                                                                           "lo":
+                                                                            {"violated": 1, "sense": ">0"},
+                                                                           "hi":
+                                                                            {"violated": 0, "sense": ">0"}}}},
+                                                                     "hi":
+                                                                      {"violated": 0, "sense": ">0"}}},
+                                                                 "hi":
+                                                                  {"violated": 0, "sense": ">0"}},
+                                                               "hi":
+                                                                {"violated": 0, "sense": ">0"}}},
+                                                           "hi":
+                                                            {"violated": 0, "sense": ">0"}},
+                                                         "hi":
+                                                          {"violated": 0, "sense": ">0"}}},
+                                                     "hi":
+                                                      {"violated": 0, "sense": ">0"}}}},
+                                               "hi":
+                                                {"axis": 1, "cut": "255/256",
+                                                 "lo":
+                                                  {"violated": 1, "sense": ">0"},
+                                                 "hi":
+                                                  {"axis": 2, "cut": "119/256",
+                                                   "lo":
+                                                    {"violated": 1, "sense": ">0"},
+                                                   "hi":
+                                                    {"violated": 0, "sense": ">0"}}}}}},
+                                         "hi":
+                                          {"axis": 1, "cut": "127/128",
+                                           "lo":
+                                            {"violated": 1, "sense": ">0"},
+                                           "hi":
+                                            {"axis": 2, "cut": "59/128",
+                                             "lo":
+                                              {"violated": 1, "sense": ">0"},
+                                             "hi":
+                                              {"violated": 0, "sense": ">0"}}}}}},
+                                   "hi":
+                                    {"violated": 1, "sense": ">0"}},
+                                 "hi":
+                                  {"violated": 0, "sense": ">0"}}},
+                             "hi":
+                              {"violated": 0, "sense": ">0"}}}},
+                       "hi":
+                        {"axis": 1, "cut": "15/16",
+                         "lo":
+                          {"violated": 1, "sense": ">0"},
+                         "hi":
+                          {"axis": 2, "cut": "7/16",
+                           "lo":
+                            {"violated": 1, "sense": ">0"},
+                           "hi":
+                            {"violated": 0, "sense": ">0"}}}}}},
+                 "hi":
+                  {"violated": 1, "sense": ">0"}}}},
+           "hi":
+            {"violated": 0, "sense": ">0"}},
+         "hi":
+          {"axis": 3, "cut": "1/2",
+           "lo":
+            {"axis": 1, "cut": "3/4",
+             "lo":
+              {"axis": 2, "cut": "3/4",
+               "lo":
+                {"violated": 1, "sense": ">0"},
+               "hi":
+                {"violated": 0, "sense": ">0"}},
+             "hi":
+              {"violated": 0, "sense": ">0"}},
+           "hi":
+            {"violated": 0, "sense": ">0"}}}}
+  }
+}

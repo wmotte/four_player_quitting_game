@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "id": "v1/v0/seed202_r78_gen011/minmax_upper_4",
+  "game": "seed202_r78_gen011",
+  "case": "V0 minmax upper bound, player 4",
+  "claim": "the stationary punishment listed here holds player 4 to at most -1396046866847/1739193319424, so w_4 <= -1396046866847/1739193319424. Scope: this bounds the min-max value from above and is reported for the sandwich only; the refutation of branch (S.2) uses the lower bound alone.",
+  "type": "witness",
+  "metrics": {"n_vars": 4, "n_conditions": 2, "max_coeff_bits": 53},
+  "data": {
+    "point": {"x1": "1/16384", "x2": "27037/32768", "x3": "1", "x4": "0"},
+    "conditions": [
+      {"name": "U_minus_a",
+       "vars": ["x1", "x2", "x3", "x4"],
+       "poly": [["-3135240186271/1739193319424", [0, 0, 0, 0]], ["5/19", [0, 0, 1, 0]], ["-8/9", [0, 1, 0, 0]], ["14603/5301", [0, 1, 1, 0]], ["-11/12", [1, 0, 0, 0]], ["545/228", [1, 0, 1, 0]], ["175/72", [1, 1, 0, 0]], ["-1966289/466488", [1, 1, 1, 0]]],
+       "sense": ">=0"},
+      {"name": "qU_minus_b",
+       "vars": ["x1", "x2", "x3", "x4"],
+       "poly": [["5560726410849/1739193319424", [0, 0, 1, 0]], ["-4874433505695/1739193319424", [0, 1, 0, 0]], ["-1864940607073/1739193319424", [0, 1, 1, 0]], ["-11831206783391/1739193319424", [1, 0, 0, 0]], ["75588910923081/40001446346752", [1, 0, 1, 0]], ["367087095681159/43479832985600", [1, 1, 0, 0]], ["-8764280230311011/3000108476006400", [1, 1, 1, 0]]],
+       "sense": ">=0"}
+    ]
+  }
+}

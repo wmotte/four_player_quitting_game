@@ -1,0 +1,109 @@
+{
+  "format_version": 1,
+  "id": "fixture/bnb/flat",
+  "game": "fixture",
+  "claim": "no point of the unit square satisfies x1 + x2 - 3 = 0",
+  "type": "bnb_trace",
+  "domain": {
+    "note": "test fixture"
+  },
+  "data": {
+    "vars": [
+      "x1",
+      "x2"
+    ],
+    "conditions": [
+      [
+        [
+          "1",
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          "1",
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          "-3",
+          [
+            0,
+            0
+          ]
+        ]
+      ]
+    ],
+    "root_box": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "leaves": [
+      {
+        "box": [
+          [
+            "0",
+            "1/2"
+          ],
+          [
+            "0",
+            "1/2"
+          ]
+        ],
+        "violated": 0,
+        "sense": "<0"
+      },
+      {
+        "box": [
+          [
+            "1/2",
+            "1"
+          ],
+          [
+            "0",
+            "1/2"
+          ]
+        ],
+        "violated": 0,
+        "sense": "<0"
+      },
+      {
+        "box": [
+          [
+            "0",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1"
+          ]
+        ],
+        "violated": 0,
+        "sense": "<0"
+      },
+      {
+        "box": [
+          [
+            "1/2",
+            "1"
+          ],
+          [
+            "1/2",
+            "1"
+          ]
+        ],
+        "violated": 0,
+        "sense": "<0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "format_version": 1,
+  "id": "v1/lcp0/seed202_r78_gen011/S1234",
+  "game": "seed202_r78_gen011",
+  "case": "S1234",
+  "claim": "support {1, 2, 3, 4}: the complementarity system of LCP(R-hat, 0) has no solution whose support is exactly these players, i.e. there is no z_S > 0 with R-hat[S,S] z_S = 0 and R-hat[S^c,S] z_S >= 0, where R-hat is the shifted unilateral matrix on the normal players. The exported point is the pair (y, l) with l >= 0; the conditions below are the linear forms v_i = (R-hat[S,S]^T y - R-hat[S^c,S]^T l)_i, whose coefficients are the payoff entries, together with the sign conditions on l. Any such z_S would give <z_S, v> = <R-hat[S,S] z_S, y> - <l, R-hat[S^c,S] z_S> <= 0, while z_S > 0 against a non-negative v with a positive sum forces <z_S, v> > 0. Conjoined over all supports this is A3: LCP(R-hat, 0) has only the trivial solution, which by [SS] Lemma 2.10 is what rules out a vanishing-stationary approach (docs/THEOREM_COVERAGE.md, item A3).",
+  "type": "witness",
+  "metrics": {"n_vars": 4, "n_conditions": 5, "max_coeff_bits": 4},
+  "data": {
+    "point": {"y1": "537/2747", "y2": "33/2747", "y3": "32/2747", "y4": "-19/2747"},
+    "conditions": [
+      {"name": "nonneg1",
+       "vars": ["y1", "y2", "y3", "y4"],
+       "poly": [["5", [0, 0, 0, 1]], ["4", [0, 0, 1, 0]], ["-1", [0, 1, 0, 0]]],
+       "sense": ">=0"},
+      {"name": "nonneg2",
+       "vars": ["y1", "y2", "y3", "y4"],
+       "poly": [["1", [0, 0, 0, 1]], ["-5", [0, 0, 1, 0]], ["1/3", [1, 0, 0, 0]]],
+       "sense": ">=0"},
+      {"name": "nonneg3",
+       "vars": ["y1", "y2", "y3", "y4"],
+       "poly": [["-5", [0, 0, 0, 1]], ["-1", [0, 1, 0, 0]], ["5", [1, 0, 0, 0]]],
+       "sense": ">=0"},
+      {"name": "nonneg4",
+       "vars": ["y1", "y2", "y3", "y4"],
+       "poly": [["5", [0, 0, 1, 0]], ["6", [0, 1, 0, 0]], ["-2/3", [1, 0, 0, 0]]],
+       "sense": ">=0"},
+      {"name": "nonzero",
+       "vars": ["y1", "y2", "y3", "y4"],
+       "poly": [["1", [0, 0, 0, 1]], ["4", [0, 0, 1, 0]], ["4", [0, 1, 0, 0]], ["14/3", [1, 0, 0, 0]]],
+       "sense": ">0"}
+    ]
+  }
+}

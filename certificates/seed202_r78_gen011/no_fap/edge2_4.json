@@ -1,0 +1,18 @@
+{
+  "format_version": 1,
+  "id": "v1/no_fap/seed202_r78_gen011/edge2_4",
+  "game": "seed202_r78_gen011",
+  "case": "edge2_4",
+  "claim": "player 4 is NOT a successor of player 2 in the successor graph S_i = {j != i : R-hat[i,j] < 0 and R-hat[j,i] > 0} of the essential-APS recursion: the entry R-hat[2,4] is not negative. The condition(s) below are constant polynomials whose coefficients are the payoff entries themselves, so substituting checks a fact about this game's shifted unilateral matrix. Conjoined over all ordered pairs, these twelve files fix the successor graph, which is the only input the depth argument of the ranks certificate takes (docs/THEOREM_COVERAGE.md, item A4).",
+  "type": "witness",
+  "metrics": {"n_vars": 1, "n_conditions": 1, "max_coeff_bits": 3},
+  "data": {
+    "point": {"t": "0"},
+    "conditions": [
+      {"name": "R_ij_not_negative",
+       "vars": ["t"],
+       "poly": [["6", [0]]],
+       "sense": ">=0"}
+    ]
+  }
+}

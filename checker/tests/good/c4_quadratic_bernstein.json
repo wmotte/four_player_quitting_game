@@ -1,0 +1,61 @@
+{
+  "format_version": 1,
+  "id": "fixture/bnb/quadratic_leaf_positive",
+  "game": "fixture",
+  "claim": "no point of [0,1]^2 has x1^2 - x1 + 1/2 <= 0 (its minimum is 1/4 > 0)",
+  "type": "bnb_trace",
+  "domain": {
+    "note": "test fixture"
+  },
+  "data": {
+    "vars": [
+      "x1",
+      "x2"
+    ],
+    "conditions": [
+      [
+        [
+          "1",
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          "-1",
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          "1/2",
+          [
+            0,
+            0
+          ]
+        ]
+      ]
+    ],
+    "condition_senses": [
+      "<=0"
+    ],
+    "root_box": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "splits": {
+      "violated": 0,
+      "sense": ">0"
+    },
+    "condition_names": [
+      "quadratic_stays_positive"
+    ]
+  }
+}

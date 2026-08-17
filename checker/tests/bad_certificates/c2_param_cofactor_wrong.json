@@ -1,0 +1,216 @@
+{
+  "format_version": 1,
+  "id": "fixture/rur/sqrt2",
+  "game": "fixture",
+  "claim": "the system has exactly two real solutions and both violate x1 - 3 >= 0",
+  "type": "rur",
+  "domain": {
+    "note": "test fixture"
+  },
+  "data": {
+    "vars": [
+      "x1",
+      "x2"
+    ],
+    "equations": [
+      [
+        [
+          "1",
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          "-2",
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      [
+        [
+          "1",
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          "-1",
+          [
+            1,
+            0
+          ]
+        ]
+      ]
+    ],
+    "separating_form": [
+      [
+        "1",
+        [
+          1,
+          0
+        ]
+      ]
+    ],
+    "elim_poly": [
+      [
+        "1",
+        [
+          2
+        ]
+      ],
+      [
+        "-2",
+        [
+          0
+        ]
+      ]
+    ],
+    "elim_derivative_check": true,
+    "param_denominator": [
+      [
+        "2",
+        [
+          1
+        ]
+      ]
+    ],
+    "param_numerators": [
+      [
+        [
+          "2",
+          [
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          "2",
+          [
+            2
+          ]
+        ]
+      ]
+    ],
+    "param_cofactors": [
+      [
+        [
+          "5",
+          [
+            2
+          ]
+        ]
+      ],
+      []
+    ],
+    "membership_cofactors": [
+      [
+        [
+          "1",
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      []
+    ],
+    "sturm": {
+      "sequence": [
+        [
+          [
+            "1",
+            [
+              2
+            ]
+          ],
+          [
+            "-2",
+            [
+              0
+            ]
+          ]
+        ],
+        [
+          [
+            "2",
+            [
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            "2",
+            [
+              0
+            ]
+          ]
+        ]
+      ],
+      "count_interval": [
+        "-2",
+        "2"
+      ],
+      "count": 2
+    },
+    "roots": [
+      {
+        "interval": [
+          "-2",
+          "-1"
+        ],
+        "refutation": {
+          "condition": [
+            [
+              "1",
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              "-3",
+              [
+                0,
+                0
+              ]
+            ]
+          ],
+          "sense": "<0",
+          "bound_derivation": "interval"
+        }
+      },
+      {
+        "interval": [
+          "1",
+          "2"
+        ],
+        "refutation": {
+          "condition": [
+            [
+              "1",
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              "-3",
+              [
+                0,
+                0
+              ]
+            ]
+          ],
+          "sense": "<0",
+          "bound_derivation": "interval"
+        }
+      }
+    ]
+  }
+}
