@@ -1,14 +1,19 @@
 # Status on `cand_seed202_r78_gen011`
 
-Honesty labels: *certified* means an exact run with a certificate in this
-repository; *proved* means a human lemma, game-independent; *open* means not
-settled.
+Honesty labels: *certified* means an exact run producing a machine-checked,
+independently replayed certificate; *proved* means a human lemma,
+game-independent; *open* means not settled. The certificate groups shipped in
+this repository cover the stationary, round-1, jump-free, and period-2 rows
+(see [certificates.md](certificates.md)). The other certified rows rest on
+logged exact runs in the working repository; their certificates are not yet
+packaged here.
 
 No counterexample has been established. The game below is a candidate: it
 passes Simon's escape screen, and the first two branches of the 2024
-decomposition, together with the jump-free and periodic pieces of the third,
-are certified empty on it. The bounded mixed remainder is open. That remainder
-is G3.
+decomposition, together with the jump-free piece of the third, are certified
+empty on it. Of the periodic profiles, those of period two and three, and the
+single-quitter ones of period four, are certified empty; higher periods are
+open. The bounded mixed remainder is open. That remainder is G3.
 
 ## The game
 
@@ -24,6 +29,7 @@ players, rational payoffs, recorded in
 | Equilibrium that ends in round 1, deviator held at the independent min-max | *certified* empty |
 | Jump-free absorption path | *certified* empty. The essential-APS argument excludes Flesch paths; simultaneous positive rates are closed by an exact finite condition on the unilateral matrix |
 | Period 2 and period 3 | *certified* empty, full grid of quitting patterns |
+| Period 4, single quitter per stage | *certified* empty, all 70 cyclic patterns: exact sign tests plus certified Bernstein emptiness. Period 4 with larger quitting sets, and higher periods, remain open |
 | Constant two-player support | *certified* empty: the chain map is Möbius, all eleven pencils hyperbolic |
 | Constant support, all 15 nonempty quitting sets | *certified* empty at zero tolerance, one decreasing direction per set. Converting the margins into the ε-version the argument needs costs constants that are computed but not all assembled |
 | Shrinking chains that switch the quitting set | *certified* empty, with positive slack |
@@ -31,11 +37,12 @@ players, rational payoffs, recorded in
 | Eventually-singleton fully absorbing paths | *certified* empty |
 | Partially absorbing paths | *proved* empty in every quitting game |
 | Short singleton-return pieces `q → J → q` | *certified* forbidden, all 28 patterns |
-| Short pair-cycles | 229 of 231 *certified* excluded. On one certified cycle the return is Möbius, `x₃' = 4420 x₃ / (1377 − 4887 x₃)`, and `x₃'/x₃ > 260/81` on the whole cell |
+| Short pair-cycles | all 231 *certified* excluded; the last two carry two independent exact expansion certificates each, both independently replayed. On one certified cycle the return is Möbius, `x₃' = 4420 x₃ / (1377 − 4887 x₃)`, and `x₃'/x₃ > 260/81` on the whole cell |
 
-The JSON groups behind the first two rows and the periodic row are in
-`certificates/seed202_r78_gen011/`. Lean translations of those groups, and of
-the front-[A], simultaneous-quit, and sharpness witnesses, are in `lean/`.
+The JSON groups behind the first two rows and the period-2 part of the
+periodic rows are in `certificates/seed202_r78_gen011/`. Lean translations of
+those groups, and of the front-[A], simultaneous-quit, and sharpness
+witnesses, are in `lean/`.
 
 ## Negative results (ceilings, not failures)
 

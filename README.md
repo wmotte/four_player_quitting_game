@@ -54,8 +54,11 @@ independently in Python and calling none of the Julia code, checks those
 certificates again. The same certificates are also replayed as Lean 4
 theorems against the Lean kernel.
 
-This repository ships the certificates, the Python checker, the Lean
-corpus for one game, and the Julia search that proposed it.
+This repository ships the certificates for the stationary, round-1,
+jump-free, and period-2 claims, the Python checker, the Lean corpus for one
+game, and the Julia search that proposed it. The remaining rows of the status
+table are certified by logged exact runs in the working repository; those
+certificates are not yet packaged here.
 
 ## The game
 
@@ -78,11 +81,12 @@ On this game, certified in exact arithmetic:
 | No ε-equilibrium that ends in round 1 | closed |
 | No absorption path without jumps | closed |
 | Period-2 and period-3 cyclic profiles | closed |
+| Period-4 cyclic profiles with a single quitter per stage | closed (all 70 cyclic patterns; exact sign tests plus certified Bernstein emptiness). Period 4 with larger quitting sets, and higher periods, remain open |
 | Constant quitting set, all 15 nonempty subsets | closed (zero-tolerance margins; the ε-conversion constants are computed but not all assembled) |
 | Shrinking chains that switch the quitting set | closed, with positive slack |
 | A coordinate eventually reaches 1; eventually-singleton fully absorbing paths | closed |
 | Short singleton-return pieces of a chain (all 28 patterns) | closed |
-| Short pair-cycles | 229 of 231 closed; one certified return is Möbius and expands by more than `260/81` on the whole cell |
+| Short pair-cycles | all 231 closed; the last two carry two independent exact expansion certificates each, both independently replayed. One certified return is Möbius and expands by more than `260/81` on the whole cell |
 
 What remains is G3: *bounded* mixed paths, those that mix continuous stretches
 with discrete jumps and do not shrink. That remainder is two statements, both

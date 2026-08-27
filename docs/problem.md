@@ -44,8 +44,10 @@ theorem.
 
 A computational search can treat the theorem as a list of things to refute,
 on one explicit game with rational payoffs. Closing the first two branches,
-and the jump-free and periodic pieces of the third, is exact algebra. The
-bounded mixed remainder is not: see [status.md](status.md).
+the jump-free piece of the third, and periodic profiles of any fixed bounded
+period, is exact algebra. Nothing bounds the period a priori, so enumeration
+alone cannot reach all periodic profiles. The bounded mixed remainder is not
+exact algebra either: see [status.md](status.md).
 
 ## Why compute
 
